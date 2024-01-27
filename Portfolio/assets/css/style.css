@@ -27,8 +27,8 @@ nav {
 }
 
 nav .logo {
-    background: url('../images/kubiiz.png');
-    width: 56px;
+    background: url('../images/kubiiz.png') repeat;
+    width: 110px;
     height: 26px;
     float: left;
     margin: 11px 0 0 30px;

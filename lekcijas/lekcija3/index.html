@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <style>
+            aside {
+                position: fixed;
+                z-index: 100;
+            }
+        </style>
+    </aside>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /*Y ass*/
+            justify-content: center; /*X ass*/
+            gap: 10px; /*row, colomn atstarpe starp elementiem*/
+            flex-wrap: wrap;
+            transform: scale(1.2);
+            transition: transform 1.5s linear;
+        }
+
+        @media screen and (max-width: 768px) {
+
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            50% {
+                opacity:1;
+            }
+            100% {
+                opacity:0;
+            }
+        }
+        .element {
+            animation: fadeIn 2s linear;
+        }
+        
+    </style>
+    <div class="one">
+        <div class="ele"></div>
+        <div class="ele2"></div>
+        <div class="ele3"></div>
+    </div>
+    <div class="two">
+        <div class="ele"></div>
+        <div class="ele2"></div>
+        <div class="ele3"></div>
+    </div>
+</body>
+</html>

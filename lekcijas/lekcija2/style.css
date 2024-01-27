@@ -1,0 +1,49 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+body {
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+.header {
+    background-color:rgb(217, 255, 210);
+    color: aquamarine;
+    font-weight: 400;
+    font-size: 11px;
+    font-style: italic;
+    font-family: Tahoma;
+}
+
+footer p {
+    padding: 10px 5px 10px 40px;
+    margin: 10px 0;
+    background-color: brown;
+    color:aliceblue;
+    border: 3px solid #4b4b4b;
+    border-radius: 5px;
+}
+
+section {
+    width: 400px;
+    height: 20px;
+}
+
+#xp, #edu, #contact {
+    background-color: #4b4b4b;
+    margin-top: 4px;
+}
+
+#edu input[type="text"] {
+    border-radius: 6px;
+}
+
+[data-testid="testo"] {
+    color: green;
+}

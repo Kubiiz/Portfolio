@@ -1,0 +1,37 @@
+.one {
+    background-color: rgb(255, 251, 232);
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*Y ass*/
+    justify-content: center; /*X ass*/
+    gap: 10px /*row, colomn atstarpe starp elementiem*/
+}
+
+.two {
+    background-color: rgb(159, 255, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Y ass*/
+    justify-content: center; /*X ass*/
+    gap: 10px; /*row, colomn atstarpe starp elementiem*/
+
+    background-size: cover;
+}
+
+.ele {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.ele2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.ele3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

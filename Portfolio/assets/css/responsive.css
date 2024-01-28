@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    #open-nav {
+        cursor: pointer;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}

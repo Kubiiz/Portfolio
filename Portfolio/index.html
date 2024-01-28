@@ -1,7 +1,7 @@
 <!--
 	Autors: Dāvis Šneiders-Zegners
 	Portfolio
-	Updated 27.01.2023
+	Updated 27.01.2023git init 
 -->
 <!DOCTYPE html>
 <html lang="lv">
@@ -9,13 +9,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon ikona interesantākam skatam browserī -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
 	<title>Portfolio</title>
 </head>
 <body>
+	<script>
+		function nav() {
+			var x = document.getElementById("nav");
+
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+	<aside id="nav">
+		<div class="closebtn" onclick="nav()">&times;</div>
+		<ul>
+			<li><a href="#home">Sākums</a></li>
+			<li><a href="#aboutme">Par mani</a></li>
+			<li><a href="#knowledge">Zināšanas</a></li>
+			<li><a href="#myworks">Mani darbi</a></li>
+			<li><a href="#contacts">Kontakti</a></li>
+		</ul>
+	</aside>
 	<div id="home"></div>
 	<nav>
-		<div class="logo"></div>
+		<div class="logo">
+			<a href="#"><img src="assets/images/kubiiz.png" alt=""></a>
+		</div>
 		<!-- Uzspiežot uz linka, ar javascript vienmērīgi noritinās uz konkrēto sadaļu -->
 		<ul>
 			<li><a href="#home">Sākums</a></li>
@@ -24,6 +49,7 @@
 			<li><a href="#myworks">Mani darbi</a></li>
 			<li><a href="#contacts">Kontakti</a></li>
 		</ul>
+		<div id="open-nav" onclick="nav()">&#9776;</div>
 	</nav>
 	<header>
 		<div class="text">

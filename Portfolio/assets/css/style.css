@@ -5,8 +5,12 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+html {
     font-size: 14px;
-    font-family: Tahoma; /* Vēl jāatrod īstais fonts */
 }
 
 a {
@@ -19,53 +23,108 @@ a:hover {
     text-decoration: underline;
 }
 
-nav {
-    width: 100%;
-    height: 70px;
-    background-color: #eea23f;
+aside#nav {
+    width: 80vw;
+    height: 100vh;
     position: fixed;
+    z-index: 1;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+    padding-top: 65px;
+    display: none;
+}
+  
+aside#nav ul {
+    position: absolute;
+    top: 40px;
+    padding-left: 40px;
+    margin: 0 0;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+aside#nav ul li {
+    padding: 10px 0;
+}
+
+aside#nav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    width: 100vw;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 nav .logo {
-    background: url('../images/kubiiz.png');
-    width: 56px;
-    height: 26px;
-    float: left;
-    margin: 22px 0 0 32px;
+    margin: 2px 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 nav ul {
-    margin: -11px 0 0 400px;
+    margin: -17px 0 0 0;
 }
 
 nav ul li{
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.3rem;
     float: left;
     list-style-type: none;
-    margin: 21px 0 0 45px;
+    margin: 21px 0 0 40px;
 }
 
 nav ul li a, 
-nav ul li a:hover{
+nav ul li a:hover,
+aside a,
+aside a:hover{
     color: #FFF;
 }
 
+#open-nav {
+    color: #FFF;
+    font-size: 1.8rem;
+    margin: 2px 32px 0 0;
+    cursor: context-menu;
+    opacity: 0;
+}
+
 header {
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: #a1a1a1;
-    width: 100%;
-    height: 500px;
+    width: 100vw;
+    height: 30vw;
 }
 
 header .text{
-    font-size: 40px;
+    font-size: 3rem;
     color: #FFF;
     padding: 200px 0 0 230px;
     text-transform: uppercase;
 }
 
 header .text .small{
-    font-size: 25px;
+    font-size: 2rem;
     color: #FFF;
     padding: 10px 0 0 100px;
     text-transform: capitalize;

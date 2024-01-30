@@ -1,3 +1,24 @@
+@media screen and (max-width: 1024px) {
+    nav ul li{
+        margin: 21px 0 0 20px;
+    }
+
+    header {
+        height: 40vw;
+        background-position: top;
+        background-size:contain;
+    }
+
+    header .text{
+        padding: 40px 0 0 120px;
+        font-size: 2.5rem;
+    }
+
+    header .text .small{
+        font-size: 1.8rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav ul {
         display: none;
@@ -7,8 +28,35 @@
         cursor: pointer;
         opacity: 1;
     }
+
+    header {
+        height: 50vw;
+        justify-content: center;
+    }
+
+    header .text{
+        padding: 40px 0 0 0;
+        font-size: 2.3rem;
+    }
+
+    header .text .small{
+        font-size: 1.8rem;
+        padding: 5px 0 0 50px;
+    }
 }
 
 @media (max-width: 480px) {
-    
+    header {
+        height: 55vw;
+        justify-content: center;
+    }
+
+    header .text{
+        font-size: 2rem;
+        padding: 35px 0 0 0;
+    }
+
+    header .text .small{
+        font-size: 1.5rem;
+    }
 }

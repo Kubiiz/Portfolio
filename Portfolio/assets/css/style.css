@@ -16,11 +16,12 @@ html {
 a {
     color: #9b3b1d;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
-    color: #72260e;
-    text-decoration: underline;
+    color: #531908;
+    transition: 0.3s;
 }
 
 aside#nav {
@@ -41,7 +42,6 @@ aside#nav ul {
     position: absolute;
     top: 40px;
     padding-left: 40px;
-    margin: 0 0;
     font-size: 1.4rem;
     list-style: none;
 }
@@ -87,7 +87,7 @@ nav ul li{
     font-size: 1.3rem;
     float: left;
     list-style-type: none;
-    margin: 21px 0 0 40px;
+    margin: 21px 0 0 45px;
 }
 
 nav ul li a, 
@@ -95,6 +95,13 @@ nav ul li a:hover,
 aside a,
 aside a:hover{
     color: #FFF;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+aside a:hover{
+    color: #f86161;
+    transition: 0.3s;
 }
 
 #open-nav {
@@ -113,18 +120,22 @@ header {
     background-size: cover;
     background-color: #a1a1a1;
     width: 100vw;
-    height: 30vw;
+    height: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 header .text{
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: #FFF;
-    padding: 200px 0 0 230px;
+    padding: 0 0 0 230px;
     text-transform: uppercase;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 header .text .small{
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #FFF;
     padding: 10px 0 0 100px;
     text-transform: capitalize;
@@ -133,7 +144,7 @@ header .text .small{
 section {
     padding: 20px;
     background-color: #f8fadd;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -153,8 +164,11 @@ section h1 {
 
 section .box {
     padding: 30px 15px;
-    font-size: 16px;
+    font-size: 1.3rem;
     line-height: 2;
+    text-align: justify;  
+    text-justify: inter-word;
+    text-indent: 50px;
 }
 
 #knowledge .box-know {

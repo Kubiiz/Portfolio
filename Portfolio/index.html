@@ -10,8 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon ikona interesantākam skatam browserī -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<title>Portfolio</title>
 </head>
 <body>
@@ -19,21 +21,21 @@
 		function nav() {
 			var x = document.getElementById("nav");
 
-			if (x.style.display == "none") {
-				x.style.display = "block";
-			} else {
+			if (x.style.display == "block") {
 				x.style.display = "none";
+			} else {
+				x.style.display = 'block';
 			}
 		}
 	</script>
 	<aside id="nav">
 		<div class="closebtn" onclick="nav()">&times;</div>
 		<ul>
-			<li><a href="#home">Sākums</a></li>
-			<li><a href="#aboutme">Par mani</a></li>
-			<li><a href="#knowledge">Zināšanas</a></li>
-			<li><a href="#myworks">Mani darbi</a></li>
-			<li><a href="#contacts">Kontakti</a></li>
+			<li><a href="#home"><i class="fa fa-home"></i> Sākums</a></li>
+			<li><a href="#aboutme"><i class="fa fa-history"></i> Par mani</a></li>
+			<li><a href="#knowledge"><i class="fa fa-graduation-cap"></i> Zināšanas</a></li>
+			<li><a href="#myworks"><i class="fa fa-code"></i> Mani darbi</a></li>
+			<li><a href="#contacts"><i class="fa fa-phone"></i> Kontakti</a></li>
 		</ul>
 	</aside>
 	<div id="home"></div>
@@ -43,11 +45,11 @@
 		</div>
 		<!-- Uzspiežot uz linka, ar javascript vienmērīgi noritinās uz konkrēto sadaļu -->
 		<ul>
-			<li><a href="#home">Sākums</a></li>
-			<li><a href="#aboutme">Par mani</a></li>
-			<li><a href="#knowledge">Zināšanas</a></li>
-			<li><a href="#myworks">Mani darbi</a></li>
-			<li><a href="#contacts">Kontakti</a></li>
+			<li><a href="#home"><i class="fa fa-home fa-lg"></i> Sākums</a></li>
+			<li><a href="#aboutme"><i class="fa fa-history fa-lg"></i> Par mani</a></li>
+			<li><a href="#knowledge"><i class="fa fa-graduation-cap fa-lg"></i> Zināšanas</a></li>
+			<li><a href="#myworks"><i class="fa fa-code fa-lg"></i> Mani darbi</a></li>
+			<li><a href="#contacts"><i class="fa fa-phone fa-lg"></i> Kontakti</a></li>
 		</ul>
 		<div id="open-nav" onclick="nav()">&#9776;</div>
 	</nav>
@@ -60,16 +62,22 @@
 	<section id="aboutme">
 		<h1>Par mani</h1>
 		<div class="box">
-			Vecāki man ir devuši vārdu Dāvis. Man ir 29 gadi. Esmu dzimis un audzis Bauskā, bet dzīvoju Rīgā.<br />
-			Teiktu, ka esmu introverta persona, kas vairāk ir priecīga veikt uzticētos darbus vienatnē, bet spēju arī pielāgoties un strādāt komandā. Vienmēr gatavs apgūt, ko jaunu un pilnveidot sevas zināšanas, kā arī nepadoties pie pirmās neveiksmes.<br />
-			Esmu ieguvis profesionālo izglītību, kā "Viesmīlības pakalpojumu speciālists".<br />
-			Savas darba gaitas uzsāku 2016. gadā un sāku stādāt par biļešu kontrolieri Rundāles pilī. 
-			Vēlāk stādāju gaismekļu ražotnē "Vizulo", kur sāku strādāt par elektromontieri un vēlāk kpāpjot pa karjeras kāpnēm, kļuvu par lodēšanas nodaļas vadītāju.<br />
-			Man ir arī dažādi hobiji jeb lietas, ko patīk darīt brīvajā laikā - pamatskolas laikā mani interesēja datorspēles, kā jau daudzus jauniešus mūsdienās. Bija pašam arī savs Counter-Strike 1.6 projekts "etr.lv" jeb "Eternal", kura darbības laikā sapratu, cik ļoti man patīk programmēšana.
-			Projektā es pats veidoju mājaslapu no A līdz Z, laika gaitā to radikāli uzlabojot gan izskata, gan funkcionalitātes ziņā. Visas Web izveides zināšanas tika iegūtas pašmācības ceļā, lasot dažādus forumus, skatot pamācības un video.
-			Laikam ejot, sapratu, ka programmēšanas hobijs sāka pārvērsties par darbu, pieteicos "Riga Coding School", lai pilnveidotu zināšanas un uzzinātu arī daudz ko jaunu.
-			Zemāk variet aplūkot manas zināšanas jeb kādas programmēšanas valodas esmu apguvis.<br />
-			Dzīvokļa remonts - patīk lietas darīt un taisīt savām rokām. Esmu dzīvoklī uztaisījis remontu sākot no elektrības un ūdensvadu pārvilkšanas, beidzot ar griestu un sienu līdzināšanu. 
+			<p>
+				Vecāki man ir devuši vārdu Dāvis. Man ir 29 gadi. Esmu dzimis un audzis Bauskā, bet dzīvoju Rīgā.<br />
+			Interneta vidē mans "nickname" ir <b>Kubiiz</b>. Teiktu, ka esmu introverta persona, kas vairāk ir priecīga veikt uzticētos darbus vienatnē, bet spēju arī pielāgoties un strādāt komandā. Vienmēr gatavs apgūt, ko jaunu un pilnveidot sevas zināšanas, kā arī nepadoties pie pirmās neveiksmes.
+			</p>
+			<p>
+				Esmu ieguvis profesionālo izglītību, kā "Viesmīlības pakalpojumu speciālists".<br />
+				Savas darba gaitas uzsāku 2016. gadā un sāku stādāt par biļešu kontrolieri Rundāles pilī. 
+				Vēlāk stādāju gaismekļu ražotnē "Vizulo", kur sāku strādāt par elektromontieri un vēlāk kāpjot pa karjeras kāpnēm, kļuvu par lodēšanas nodaļas vadītāju.<br />
+			</p>
+			<p>
+				Man ir arī dažādi hobiji jeb lietas, ko patīk darīt brīvajā laikā - pamatskolas laikā mani interesēja datorspēles, kā jau daudzus jauniešus mūsdienās. Bija pašam arī savs Counter-Strike 1.6 projekts "etr.lv" jeb "Eternal", kura darbības laikā sapratu, cik ļoti man patīk programmēšana.
+				Projektā es pats veidoju mājaslapu no A līdz Z, laika gaitā to radikāli uzlabojot gan izskata, gan funkcionalitātes ziņā. Visas Web izveides zināšanas tika iegūtas pašmācības ceļā, lasot dažādus forumus, skatot pamācības un video.
+				Laikam ejot, sapratu, ka programmēšanas hobijs sāka pārvērsties par darbu, pieteicos "Riga Coding School", lai pilnveidotu zināšanas un uzzinātu arī daudz ko jaunu.
+				Zemāk variet aplūkot manas zināšanas jeb kādas programmēšanas valodas esmu apguvis.<br />
+				Dzīvokļa remonts - patīk lietas darīt un taisīt savām rokām. Esmu dzīvoklī uztaisījis remontu sākot no elektrības un ūdensvadu pārvilkšanas, beidzot ar griestu un sienu līdzināšanu. 
+			</p>
 		</div>
 	</section>
 	<section id="knowledge">

@@ -9,27 +9,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon ikona interesantākam skatam browserī -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<title>Portfolio</title>
 </head>
 <body>
-	<script>
-		function nav() {
-			var x = document.getElementById("nav");
-
-			if (x.style.display == "block") {
-				x.style.display = "none";
-			} else {
-				x.style.display = 'block';
-			}
-		}
-	</script>
-	<aside id="nav">
-		<div class="closebtn" onclick="nav()">&times;</div>
+	<aside id="nav" class="smooth">
+		<div class="closebtn oc-nav">&times;</div>
 		<ul>
 			<li><a href="#home"><i class="fa fa-home"></i> Sākums</a></li>
 			<li><a href="#aboutme"><i class="fa fa-history"></i> Par mani</a></li>
@@ -39,24 +26,24 @@
 		</ul>
 	</aside>
 	<div id="home"></div>
-	<nav>
+	<nav class="smooth">
 		<div class="logo">
-			<a href="#"><img src="assets/images/kubiiz.png" alt=""></a>
+			<a href="#home"><img src="assets/images/kubiiz.png" alt=""></a>
 		</div>
 		<!-- Uzspiežot uz linka, ar javascript vienmērīgi noritinās uz konkrēto sadaļu -->
 		<ul>
-			<li><a href="#home"><i class="fa fa-home fa-lg"></i> Sākums</a></li>
+			<li><a href="#home" ><i class="fa fa-home fa-lg"></i> Sākums</a></li>
 			<li><a href="#aboutme"><i class="fa fa-history fa-lg"></i> Par mani</a></li>
 			<li><a href="#knowledge"><i class="fa fa-graduation-cap fa-lg"></i> Zināšanas</a></li>
 			<li><a href="#myworks"><i class="fa fa-code fa-lg"></i> Mani darbi</a></li>
 			<li><a href="#contacts"><i class="fa fa-phone fa-lg"></i> Kontakti</a></li>
 		</ul>
-		<div id="open-nav" onclick="nav()">&#9776;</div>
+		<div id="open-nav" class="oc-nav">&#9776;</div>
 	</nav>
 	<header>
 		<div class="text">
-			Dāvis Šneiders-Zegners
-			<div class="small">Portfolio</div>
+			<div class="name" rel="Dāvis Šneiders-Zegners"></div>
+			<div class="small" rel="Portfolio"></div>
 		</div>
 	</header>
 	<section id="aboutme">
@@ -127,19 +114,18 @@
 		<div class="box">
 			<b>Telefons:</b> +371 22455949<br />
 			<b>Epasts:</b> <a href="mailto:davis.sneiders@etr.lv">davis.sneiders@etr.lv</a><br />
-			<b>Github:</b> <a href="#">būs links</a><br />
+			<b>Github:</b> <a href="https://github.com/Kubiiz">būs links</a><br />
 			<b>Discord:</b> <a href="#">būs links</a><br />
 		</div>
 		<!-- Iekļaut arī saziņas formu? -->
 	</section>
 	<footer>
-		<div class="rights">
-			<div class="box">
-				Visas tiesības aizsargātas &copy; &nbsp; &nbsp; Mājaslapu veidoja <span>Dāvis Šneiders-Zegners</span>
-			</div>
-		</div>
+		<p>Visas tiesības aizsargātas &copy;</p>
+		<p>Mājaslapu veidoja <span>Dāvis Šneiders-Zegners</span></p>
 	</footer>
 	<!-- Poga "uz augšu". Vienmērīgi uzritinās lapas saturu uz augšu. -->
-	<div id="backtotop">Top</div>
+	<div id="backtotop"><i class="fa fa-arrow-up fa-2x"></i></div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/javascript.js"></script>
 </body>
 </html>

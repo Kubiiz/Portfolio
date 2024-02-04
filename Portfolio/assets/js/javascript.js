@@ -1,12 +1,26 @@
+// Definē elementus
+const nav = $('#nav');
+const smooth = $('.smooth a');
+const backtotop = $('#backtotop');
+const portfolio = $("header .small");
+
+// Parāda tekstu pa vienam burtam "header sadaļā"
+function headerDelay(text, element){
+    element.append(text[0]);
+
+     setTimeout(
+         function(){
+            headerDelay(text.slice(1),element);
+           }, 100,
+    );
+}
+
 $(document).ready(function(){
-    // Definē elementus
-    const nav = $('#nav');
-    const backtotop = $('#backtotop');
-    const name = $("header .name");
-    const portfolio = $("header .small");
+    headerDelay(portfolio.attr('rel'), portfolio);
+    Fancybox.bind("[data-fancybox]");
 
     // Vienmērīgi noritina uz konkrēto sadaļu
-    $(".smooth a").on('click', function() {
+    smooth.on('click', function() {
         if (this.hash !== "") {
             var hash = this.hash;
 
@@ -27,25 +41,6 @@ $(document).ready(function(){
         }
     }); 
 
-    // Parāda tekstu pa vienam burtam "header sadaļā"
-    function headerDelay(text, element, text2, element2){
-        element.append(text[0]);
-
-        setTimeout(
-            function(){
-                headerDelay(text.slice(1),element);
-            }, 100,
-        );
-
-        setTimeout(
-            function(){
-                headerDelay(text2.slice(0),element2);
-            }, 2400,
-        );
-    }
-
-    headerDelay(name.attr('rel'), name, portfolio.attr('rel'), portfolio);
-
     // Noritinot nedaudz uz leju, parāda back to top pogu
     backtotop.hide();
 
@@ -61,5 +56,24 @@ $(document).ready(function(){
     backtotop.click(function(){
         $('html, body').animate({scrollTop : 0}, 800);
         return false;
+    });
+});
+
+// Seko līdzi, kurā sekcijā atrodas un parāda navigācijā
+$(document).scroll(function () {
+    var cutoff = $(window).scrollTop();
+
+    $('section').each(function () {
+        smooth.removeClass('current');
+
+        if(cutoff <= 300) {
+            $('.smooth a[data-section="home"]').addClass('current');
+        } else if ($(this).offset().top + $(this).height() > cutoff + 80) {
+            let current = $(this).attr('id');
+
+            $('.smooth a[data-section="' + current + '"]').addClass('current');
+            
+            return false;
+        }
     });
 });

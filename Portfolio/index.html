@@ -1,7 +1,6 @@
 <!--
 	Autors: Dāvis Šneiders-Zegners
 	Portfolio
-	Updated 27.01.2023git init 
 -->
 <!DOCTYPE html>
 <html lang="lv">
@@ -9,20 +8,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon ikona interesantākam skatam browserī -->
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
 	<aside id="nav" class="smooth">
 		<div class="closebtn oc-nav">&times;</div>
 		<ul>
-			<li><a href="#home"><i class="fa fa-home"></i> Sākums</a></li>
-			<li><a href="#aboutme"><i class="fa fa-history"></i> Par mani</a></li>
-			<li><a href="#knowledge"><i class="fa fa-graduation-cap"></i> Zināšanas</a></li>
-			<li><a href="#myworks"><i class="fa fa-code"></i> Mani darbi</a></li>
-			<li><a href="#contacts"><i class="fa fa-phone"></i> Kontakti</a></li>
+			<li><a data-section="home" href="#home" class="current"><i class="fa fa-home fa-lg"></i> Sākums</a></li>
+			<li><a data-section="aboutme" href="#aboutme"><i class="fa fa-history fa-lg"></i> Par mani</a></li>
+			<li><a data-section="knowledge" href="#knowledge"><i class="fa fa-graduation-cap fa-lg"></i> Zināšanas</a></li>
+			<li><a data-section="myworks" href="#myworks"><i class="fa fa-code fa-lg"></i> Mani darbi</a></li>
+			<li><a data-section="contacts" href="#contacts"><i class="fa fa-phone fa-lg"></i> Kontakti</a></li>
 		</ul>
 	</aside>
 	<div id="home"></div>
@@ -30,19 +30,18 @@
 		<div class="logo">
 			<a href="#home"><img src="assets/images/kubiiz.png" alt=""></a>
 		</div>
-		<!-- Uzspiežot uz linka, ar javascript vienmērīgi noritinās uz konkrēto sadaļu -->
 		<ul>
-			<li><a href="#home" ><i class="fa fa-home fa-lg"></i> Sākums</a></li>
-			<li><a href="#aboutme"><i class="fa fa-history fa-lg"></i> Par mani</a></li>
-			<li><a href="#knowledge"><i class="fa fa-graduation-cap fa-lg"></i> Zināšanas</a></li>
-			<li><a href="#myworks"><i class="fa fa-code fa-lg"></i> Mani darbi</a></li>
-			<li><a href="#contacts"><i class="fa fa-phone fa-lg"></i> Kontakti</a></li>
+			<li><a data-section="home" href="#home" class="current"><i class="fa fa-home fa-lg"></i> Sākums</a></li>
+			<li><a data-section="aboutme" href="#aboutme"><i class="fa fa-history fa-lg"></i> Par mani</a></li>
+			<li><a data-section="knowledge" href="#knowledge"><i class="fa fa-graduation-cap fa-lg"></i> Zināšanas</a></li>
+			<li><a data-section="myworks" href="#myworks"><i class="fa fa-code fa-lg"></i> Mani darbi</a></li>
+			<li><a data-section="contacts" href="#contacts"><i class="fa fa-phone fa-lg"></i> Kontakti</a></li>
 		</ul>
 		<div id="open-nav" class="oc-nav">&#9776;</div>
 	</nav>
 	<header>
 		<div class="text">
-			<div class="name" rel="Dāvis Šneiders-Zegners"></div>
+			<div class="name">Dāvis Šneiders-Zegners</div>
 			<div class="small" rel="Portfolio"></div>
 		</div>
 	</header>
@@ -82,6 +81,8 @@
 				<h2>Papildus apgūts:</h2>
 				<div>Laravel framework</div>
 				<div>MySQL datubāzes</div>
+				<div>git/github</div>
+				<div>Tailwind CSS</div>
 			</div>
 		</div>
 		<div class="clear"></div>
@@ -90,19 +91,27 @@
 		<h1>Mani darbi</h1>
 		<div class="box">
 			<div class="works">
-				<img src="assets/images/noimg.jpeg" alt="ETR.lv - Counter Strike projekts">
+				<a href="assets/images/noimg.jpeg" data-fancybox data-caption="ETR.lv - Counter Strike projekts">
+				<img src="assets/images/noimg.jpeg" />
+				</a>
 				<span>ETR.lv - Counter Strike projekts</span>
 			</div>
 			<div class="works">
-				<img src="assets/images/noimg.jpeg" alt="CUPlv - Datorspēļu turnīru rīkošanas mājaslapa">
+				<a href="assets/images/noimg.jpeg" data-fancybox data-caption="CUPlv - Datorspēļu turnīru rīkošanas mājaslapa">
+					<img src="assets/images/noimg.jpeg" />
+				</a>
 				<span>CUPlv - Datorspēļu turnīru rīkošanas mājaslapa</span>
 			</div>
 			<div class="works">
-				<img src="assets/images/noimg.jpeg" alt="Buhality - Dzeršanas spēle">
+				<a href="assets/images/noimg.jpeg" data-fancybox data-caption="Buhality - Dzeršanas spēle">
+					<img src="assets/images/noimg.jpeg" alt="Buhality - Dzeršanas spēle">
+				</a>
 				<span>Buhality - Dzeršanas spēle</span>
 			</div>
 			<div class="works">
-				<img src="assets/images/noimg.jpeg" alt="Buhality - Dzeršanas spēle">
+				<a href="assets/images/noimg.jpeg" data-fancybox data-caption="Izklaidesnoma.lv - Laivu, atrakciju noma">
+					<img src="assets/images/noimg.jpeg" />
+				</a>
 				<span>Izklaidesnoma.lv - Laivu, atrakciju noma</span>
 			</div>
 				<!-- Tiks pievienoti projektu attēli un uzklikšķinot, parādīs attēlu pa visu ekrānu -->
@@ -123,9 +132,9 @@
 		<p>Visas tiesības aizsargātas &copy;</p>
 		<p>Mājaslapu veidoja <span>Dāvis Šneiders-Zegners</span></p>
 	</footer>
-	<!-- Poga "uz augšu". Vienmērīgi uzritinās lapas saturu uz augšu. -->
 	<div id="backtotop"><i class="fa fa-arrow-up fa-2x"></i></div>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="assets/js/javascript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 </html>

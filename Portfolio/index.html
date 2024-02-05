@@ -45,7 +45,7 @@
 			<div class="small" data-text="Portfolio"></div>
 		</div>
 	</header>
-	
+	<!--
 	<section id="aboutme">
 		<h1><i class="fa fa-history fa-lg"></i>Par mani</h1>
 		<div class="box">
@@ -120,25 +120,11 @@
 		<h1><i class="fa fa-code fa-lg"></i>Mani darbi</h1>
 		<div class="box">
 			<div>
-				<a class="blur" href="assets/images/noimg.jpeg" data-fancybox="works" data-caption="ETR.lv - Counter Strike projekts">
-					<img src="assets/images/noimg.jpeg" alt="" />
+				<a class="blur" href="assets/images/works/etr.png" data-fancybox="works" data-caption="Counter Strike projekts">
+					<img src="assets/images/works/thumbnail/etr.png" alt="" />
 					<i class="fa fa-search-plus fa-3x"></i>
 				</a>
-				<span>ETR.lv - Counter Strike projekts</span>
-			</div>
-			<div>
-				<a class="blur" href="assets/images/noimg.jpeg" data-fancybox="works" data-caption="CUPlv - Datorspēļu turnīru rīkošanas mājaslapa">
-					<img class="blur" src="assets/images/noimg.jpeg" alt="" />
-					<i class="fa fa-search-plus fa-3x"></i>
-				</a>
-				<span>CUPlv - Datorspēļu turnīru rīkošanas mājaslapa</span>
-			</div>
-			<div>
-				<a class="blur" href="assets/images/works/buhality.png" data-fancybox="works" data-caption="Buhality - Dzeršanas spēle">
-					<img class="blur" src="assets/images/works/thumbnail/buhality.png" alt="" />
-					<i class="fa fa-search-plus fa-3x"></i>
-				</a>
-				<span>Buhality - Dzeršanas spēle</span>
+				<span>Counter Strike projekts</span>
 			</div>
 			<div>
 				<a class="blur" href="assets/images/works/izklaidesnoma.png" data-fancybox="works" data-caption="Izklaidesnoma.lv - Laivu, atrakciju noma">
@@ -147,17 +133,62 @@
 				</a>
 				<span>Izklaidesnoma.lv - Laivu, atrakciju noma</span>
 			</div>
+			<div>
+				<a class="blur" href="assets/images/works/cup.png" data-fancybox="works" data-caption="Datorspēļu turnīru rīkošanas mājaslapa">
+					<img class="blur" src="assets/images/works/thumbnail/cup.png" alt="" />
+					<i class="fa fa-search-plus fa-3x"></i>
+				</a>
+				<span>Datorspēļu turnīru rīkošanas mājaslapa</span>
+			</div>
+			<div>
+				<a class="blur" href="assets/images/works/mceternal.png" data-fancybox="works" data-caption="Minecraft projekts">
+					<img class="blur" src="assets/images/works/thumbnail/mceternal.png" alt="" />
+					<i class="fa fa-search-plus fa-3x"></i>
+				</a>
+				<span>Minecraft projekts</span>
+			</div>
+			<div>
+				<a class="blur" href="assets/images/works/buhality.png" data-fancybox="works" data-caption="Dzeršanas spēle">
+					<img class="blur" src="assets/images/works/thumbnail/buhality.png" alt="" />
+					<i class="fa fa-search-plus fa-3x"></i>
+				</a>
+				<span>Dzeršanas spēle</span>
+			</div>
 		</div>
 	</section>
+-->
 	<section id="contacts">
 		<h1><i class="fa fa-phone fa-lg"></i>Kontakti</h1>
 		<div class="box">
-			<b>Telefons:</b> +371 22455949<br />
-			<b>Epasts:</b> <a href="mailto:davis.sneiders@etr.lv">davis.sneiders@etr.lv</a><br />
-			<b>Github:</b> <a href="https://github.com/Kubiiz">būs links</a><br />
-			<b>Discord:</b> <a href="#">būs links</a><br />
+			<div class="contact">
+				<b>Telefons:</b> +371 22455949<br />
+				<b>Epasts:</b> <a href="mailto:davis.sneiders@etr.lv">davis.sneiders@etr.lv</a><br />
+				<b>Github:</b> <a href="https://github.com/Kubiiz">būs links</a><br />
+				<b>Discord:</b> <a href="http://discordapp.com/users/kubiiz">būs links</a><br />
+			</div>
+			<form method="POST" action="modules/contact.php">
+				<label for="email" class="col-md-4 control-label">Tavs epasts</label>
+				<div class="form">
+					<input id="email" type="email" class="form-control " name="email" value="" placeholder="tavs@epasts.lv" required>
+				</div>
+				<label for="name" class="col-md-4 control-label">Vārds</label>
+				<div class="form">
+					<input id="name" type="text" class="form-control " name="name" value="" placeholder="Jūsu vārds" required>
+				</div>
+				
+				<label for="comment" class="col-md-4 control-label">Ziņa</label>
+				<div class="form">
+					<textarea name="comment" class="form-control" id="exampleFormControlTextarea1"></textarea>
+					<span class="text-danger"></span>
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary">
+						<i class="fa fa-check"></i> Sūtīt
+					</button>
+				</div>
+			</form>
 		</div>
-		<!-- Iekļaut arī saziņas formu? -->
 	</section>
 	<footer>
 		<p>Visas tiesības aizsargātas &copy;</p>

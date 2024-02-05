@@ -82,6 +82,10 @@
         height: 55px;
     }
 
+    #contacts .box{
+        grid-template-columns: 100%;
+    }
+
     footer {
         flex-direction:column;
         padding: 10px 0;

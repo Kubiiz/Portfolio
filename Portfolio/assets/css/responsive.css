@@ -40,6 +40,10 @@
         grid-template-columns: 50% 50%;
         gap: 10px;
     }
+
+    #contacts .box{
+        grid-template-columns: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -77,13 +81,13 @@
         gap: 0;
     }
 
+    #contacts form label {
+        margin-bottom: -10px;
+    }
+
     #backtotop {
         width: 55px;
         height: 55px;
-    }
-
-    #contacts .box{
-        grid-template-columns: 100%;
     }
 
     footer {
@@ -105,5 +109,9 @@
 
     header .text .small{
         font-size: 2rem;
+    }
+
+    #contacts form {
+        grid-template-columns: 100%;
     }
 }

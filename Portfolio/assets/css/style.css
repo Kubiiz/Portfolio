@@ -158,7 +158,6 @@ section {
     padding: 20px 0;
     width: 80vw;
     margin: 0 auto;
-    background-color: #fff2e1;
 }
 
 section h1 {
@@ -265,12 +264,74 @@ section .box {
 
 #contacts .box {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     align-items: center;
 }
 
 #contacts .box .contact {
     margin-left: 30px;
+}
+
+#contacts .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contacts form {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#contacts form input {
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#contacts form textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    transition: 0.3s;
+}
+
+#contacts form input:hover,
+#contacts form textarea:hover {
+    border: 1px solid rgb(231, 148, 22);
+}
+
+#contacts form button {
+    width: 80px;
+    height: 40px;
+    background-color: #eea23f;
+    color: #fff;
+    border: 1px solid #c58127;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contacts form button:hover {
+    background-color: #d88e2c;
 }
 
 footer {
@@ -319,7 +380,7 @@ footer p{
 
 @keyframes pulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
       transform: scale(1.15);
@@ -327,7 +388,7 @@ footer p{
     100% {
       transform: scale(1);
     }
-  }
+}
 
 .clear {
     clear: both;

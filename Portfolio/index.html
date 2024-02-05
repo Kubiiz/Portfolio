@@ -9,9 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon ikona interesantākam skatam browserī -->
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
@@ -45,7 +45,7 @@
 			<div class="small" data-text="Portfolio"></div>
 		</div>
 	</header>
-	<!--
+	
 	<section id="aboutme">
 		<h1><i class="fa fa-history fa-lg"></i>Par mani</h1>
 		<div class="box">
@@ -156,38 +156,35 @@
 			</div>
 		</div>
 	</section>
--->
 	<section id="contacts">
 		<h1><i class="fa fa-phone fa-lg"></i>Kontakti</h1>
 		<div class="box">
 			<div class="contact">
 				<b>Telefons:</b> +371 22455949<br />
 				<b>Epasts:</b> <a href="mailto:davis.sneiders@etr.lv">davis.sneiders@etr.lv</a><br />
-				<b>Github:</b> <a href="https://github.com/Kubiiz">būs links</a><br />
-				<b>Discord:</b> <a href="http://discordapp.com/users/kubiiz">būs links</a><br />
+				<a href="https://github.com/Kubiiz"><b>Github</b></a><br />
+			 	<a href="http://discordapp.com/users/kubiiz"><b>Discord</b></a><br />
 			</div>
-			<form method="POST" action="modules/contact.php">
-				<label for="email" class="col-md-4 control-label">Tavs epasts</label>
-				<div class="form">
-					<input id="email" type="email" class="form-control " name="email" value="" placeholder="tavs@epasts.lv" required>
-				</div>
-				<label for="name" class="col-md-4 control-label">Vārds</label>
-				<div class="form">
-					<input id="name" type="text" class="form-control " name="name" value="" placeholder="Jūsu vārds" required>
-				</div>
-				
-				<label for="comment" class="col-md-4 control-label">Ziņa</label>
-				<div class="form">
-					<textarea name="comment" class="form-control" id="exampleFormControlTextarea1"></textarea>
-					<span class="text-danger"></span>
-				</div>
-				
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">
+			<div class="form">
+				<div class="contact-form"><i class="fa fa-pencil-square-o"></i> Saziņas forma</div>
+				<form method="POST" action="modules/contact.php">
+					<label for="email" class="label">Jūsu epasts</label>
+					<div class="form">
+						<input id="email" type="email" name="email" value="" placeholder="tavs@epasts.lv" required>
+					</div>
+					<label for="name" class="label">Jūsu vārds</label>
+					<div class="form">
+						<input id="name" type="text" name="name" value="" placeholder="Jūsu vārds" required>
+					</div>
+					<label for="comment" class="label">Ziņa</label>
+					<div class="form">
+						<textarea name="comment" placeholder="Ziņa"></textarea>
+					</div>
+					<button type="submit">
 						<i class="fa fa-check"></i> Sūtīt
 					</button>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</section>
 	<footer>

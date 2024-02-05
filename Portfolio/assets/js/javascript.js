@@ -75,7 +75,9 @@ $(document).scroll(function () {
     $('section').each(function () {
         smooth.removeClass('current');
 
-        if(cutoff <= 300) {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
+            $('.smooth a[data-section="contacts"]').addClass('current');
+        } else if(cutoff <= 300) {
             $('.smooth a[data-section="home"]').addClass('current');
         } else if ($(this).offset().top + $(this).height() > cutoff + 80) {
             let current = $(this).attr('id');

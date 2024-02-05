@@ -194,18 +194,19 @@ section .box {
 }
 
 #knowledge h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 10px 0;
 }
 
-#knowledge .box-know {
+#knowledge .box-know{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 15px;
 }
 
-#knowledge .box-know div {
+#knowledge .box-know div, 
+#myworks .box div{
     border: 2px solid #f3f3f3;
     padding: 15px;
     margin-right: 10px;
@@ -214,7 +215,7 @@ section .box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     transition: 0.3s;
 }
@@ -230,26 +231,40 @@ section .box {
     width: 60%;
 }
 
-#knowledge .box-know span {
+#knowledge .box-know span,
+#myworks span {
     font-size: 1.1rem;
+    
 }
 
-#myworks .works {
-    width: 300px;
-    float: left;
-    margin-right: 15px;
+#myworks .box {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 15px;
+    margin-right: 18px;
+}
+
+#myworks .blur {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#myworks .blur i {
+    display: none;
+    position: absolute;
+    color: rgb(0, 0, 0, 0.5);
 }
 
 #myworks img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     border: 1px solid #eea23f;
     border-radius: 6px;
-    float: left;
+    transition: 0.3s;
 }
 
-#myworks span {
-    font-style: italic;
+#myworks img:hover {
+    filter: blur(3px);
 }
 
 footer {

@@ -16,8 +16,8 @@ function headerDelay(text, element){
 }
 
 $(document).ready(function(){
-    headerDelay(portfolio.attr('rel'), portfolio);
-    Fancybox.bind("[data-fancybox]");
+    headerDelay(portfolio.data('text'), portfolio);
+    Fancybox.bind('[data-fancybox="works"]');
 
     // Vienmērīgi noritina uz konkrēto sadaļu
     smooth.on('click', function() {
@@ -40,6 +40,15 @@ $(document).ready(function(){
             nav.fadeOut('fast');
         }
     }); 
+
+    // Uzbraucot uz attēla, parāda lupu, lai skatītu lielāku attēlu
+    $('.blur').each(function(){
+        $(this).hover(function(){
+            $('i', this).fadeIn('fast');
+        }, function(){
+            $('i', this).fadeOut('fast');
+        });
+    });
 
     // Noritinot nedaudz uz leju, parāda back to top pogu
     backtotop.hide();

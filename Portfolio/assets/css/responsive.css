@@ -27,13 +27,18 @@
         margin-right: 5px;
     }
 
-    #knowledge .box-know {
+    #knowledge .box-know{
         grid-template-columns: 33.3% 33.3% 33.3%;
         gap: 10px;
     }
 
     #knowledge .box-know>div:hover {
         transform: scale(1.1);
+    }
+
+    #myworks .box {
+        grid-template-columns: 50% 50%;
+        gap: 10px;
     }
 }
 
@@ -65,6 +70,11 @@
     #knowledge .box-know {
         grid-template-columns: 50% 50%;
         gap: 10px;
+    }
+
+    #myworks .box {
+        grid-template-columns: 100%;
+        gap: 0;
     }
 
     #backtotop {

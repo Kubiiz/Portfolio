@@ -66,6 +66,7 @@ aside#nav .closebtn {
 nav {
     width: 100vw;
     height: 65px;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     display: flex;
@@ -153,28 +154,35 @@ header .text .small{
 }
 
 section {
-    padding: 20px;
-    background-color: #f8fadd;
+    padding: 20px 0;
     width: 80vw;
     margin: 0 auto;
 }
 
 section:first-of-type {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 section h1 {
-    font-size: 25px;
+    font-size: 1.8rem;
     text-align: center;
-    color: #7c7c7c;
+    color: #525252;
     text-transform: uppercase;
+    padding-top: 30px;
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-color: #eea23f;
+    text-decoration-thickness: 2px;
+}
+
+section h1 i {
+    color: #eea23f;
+    margin-right: 8px;
 }
 
 section .box {
-    padding: 30px 15px;
+    padding: 30px 0;
+    margin-right: 35px;
     font-size: 1.3rem;
     line-height: 2;
 }
@@ -185,27 +193,45 @@ section .box {
     text-indent: 50px;
 }
 
-#knowledge .box-know {
-    float: left;
-    padding-right: 150px;
+#knowledge h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 10px 0;
 }
 
-#knowledge .box-know h2 {
-    font-size: 25px;
-    font-weight: 400;
+#knowledge .box-know {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 15px;
 }
 
 #knowledge .box-know div {
-    float: left;
-    border: 2px solid #ccc;
-    padding: 15px 30px;
+    border: 2px solid #f3f3f3;
+    padding: 15px;
     margin-right: 10px;
     border-radius: 6px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
 }
 
 #knowledge .box-know>div:hover {
-    background-color: #f4f7cf;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    border: none;
+    transform: scale(1.15);
+}
+
+#knowledge .box-know img {
+    width: 60%;
+}
+
+#knowledge .box-know span {
+    font-size: 1.1rem;
 }
 
 #myworks .works {

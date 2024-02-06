@@ -269,7 +269,15 @@ section .box {
 }
 
 #contacts .box .contact {
-    margin-left: 30px;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+#contacts .box .contact img {
+    width: 28px;
+    vertical-align: -8px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
 }
 
 #contacts .contact-form {
@@ -279,6 +287,10 @@ section .box {
     margin: 30px 0;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#contacts .contact-form i {
+    margin-right: 3px;
 }
 
 #contacts form {
@@ -328,6 +340,11 @@ section .box {
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     transition: 0.3s;
+}
+
+#contacts label {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
 }
 
 #contacts form button:hover {

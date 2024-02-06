@@ -7,8 +7,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon ikona interesantākam skatam browserī -->
+	<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
 	<title>Portfolio</title>
+	<meta name="description" content="Dāvis Šneiders-Zegners Portfolio">
+  	<meta name="keywords" content="Portfolio, Kubiiz, Dāvis Šneiders-Zegners, PHP, HTML, CSS, jQuery, javascript">
+  	<meta name="author" content="Dāvis Šneiders-Zegners">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -160,7 +163,7 @@
 		<h1><i class="fa fa-phone fa-lg"></i>Kontakti</h1>
 		<div class="box">
 			<div class="contact">
-				<img src="assets/images/icons/phone.png" alt=""> <a target="_blank" href="tel:+371 22455949">+371 22455949</a><br />
+				<img src="assets/images/icons/phone.png" alt=""> <a target="_blank" href="tel:37122455949">+371 22455949</a><br />
 				<img src="assets/images/icons/email.png" alt=""> <a target="_blank" href="mailto:davis.sneiders@etr.lv">davis.sneiders@etr.lv</a><br />
 				<img src="assets/images/icons/facebook.png" alt=""> <a target="_blank" href="https://www.facebook.com/kubiizlv">Facebook</a><br />
 				<img src="assets/images/icons/github.png" alt=""> <a target="_blank" href="https://github.com/Kubiiz">Github</a><br />
@@ -169,17 +172,17 @@
 			<div class="form">
 				<div class="contact-form"><i class="fa fa-pencil-square-o"></i> Saziņas forma</div>
 				<form method="POST" action="modules/contact.php">
-					<label for="email" class="label">Jūsu epasts</label>
+					<label for="email">Jūsu epasts</label>
 					<div class="form">
 						<input id="email" type="email" name="email" value="" placeholder="tavs@epasts.lv" required>
 					</div>
-					<label for="name" class="label">Jūsu vārds</label>
+					<label for="name">Jūsu vārds</label>
 					<div class="form">
 						<input id="name" type="text" name="name" value="" placeholder="Jūsu vārds" required>
 					</div>
-					<label for="comment" class="label">Ziņa</label>
+					<label for="comment">Ziņa</label>
 					<div class="form">
-						<textarea name="comment" placeholder="Ziņa"></textarea>
+						<textarea id="comment" name="comment" placeholder="Ziņa"></textarea>
 					</div>
 					<button type="submit">
 						<i class="fa fa-check"></i> Sūtīt
